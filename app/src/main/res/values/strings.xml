@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AccountCommons</string>
+    <string name="lit_login_with_facebook">Masuk dengan Facebook</string>
+    <string name="lit_login_with_google">Masuk dengan Google</string>
+    <string name="lit_login">Masuk</string>
+    <string name="lit_register_here"> daftar disini</string>
+    <string name="lit_forget_password">Lupa password?</string>
+    <string name="lit_title_have_account">Sudah punya akun? </string>
+    <string name="lit_password">Kata Sandi</string>
+    <string name="lit_email">Alamat Email</string>
+    <string name="lit_or">atau</string>
+    <string name="lit_facebook">Facebook</string>
+    <string name="lit_google">Google</string>
+    <string name="lit_full_name">Nama lengkap</string>
+    <string name="lit_phone">No handpone</string>
+    <string name="lit_login_here"> Masuk disini</string>
+    <string name="lit_title_not_have_account">Belum punya akun? </string>
+    <string name="lit_register">Daftar</string>
+    <string name="lit_title_forget_password">Ketik email Anda untuk buat kata sandi baru</string>
+    <string name="lit_forget_password_button">Atur ulang password</string>
+    <string name="lit_processing_">Memproses...</string>
+    <string name="lit_please_wait">Mohon menunggu</string>
+    <string name="lit_select_picture">Pilih Gambar</string>
+    <string name="message_image_load_failed">Gagal mengambil data</string>
+    <string name="message_data_fetch_failed">Gagal mengambil data</string>
+    <string name="lit_error_email_empty">Email tidak boleh kosong</string>
+    <string name="lit_error_password_empty">Password tidak boleh kosong</string>
+    <string name="lit_error_email_does_not_match_format">Email tidak sesuai format</string>
+</resources>

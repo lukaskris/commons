@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "208987835659",
+    "firebase_url": "https://houseofdesign-4f36f.firebaseio.com",
+    "project_id": "houseofdesign-4f36f",
+    "storage_bucket": "houseofdesign-4f36f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208987835659:android:da057e3bb2ce5b8f",
+        "android_client_info": {
+          "package_name": "com.leaksoft.app.houseofdesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208987835659-2c113q9r7u25kcb41lvjde3qf6201hll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.leaksoft.app.houseofdesign",
+            "certificate_hash": "44f1ed1ef5ce608a69cc3ff33fcc79629a012ff0"
+          }
+        },
+        {
+          "client_id": "208987835659-9bunel7r9ucvk021aq6kj5k00od0cfaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnKKxs447iMQ2LIvuv6KrRCjzUzXU3Bb8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208987835659-9bunel7r9ucvk021aq6kj5k00od0cfaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208987835659:android:aca9b7254ca11c9c",
+        "android_client_info": {
+          "package_name": "com.evodream.app.accountcommons"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208987835659-cuspjfavf359jtt8bf1tunjasonv2mjs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.evodream.app.accountcommons",
+            "certificate_hash": "44f1ed1ef5ce608a69cc3ff33fcc79629a012ff0"
+          }
+        },
+        {
+          "client_id": "208987835659-9bunel7r9ucvk021aq6kj5k00od0cfaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnKKxs447iMQ2LIvuv6KrRCjzUzXU3Bb8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208987835659-9bunel7r9ucvk021aq6kj5k00od0cfaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
