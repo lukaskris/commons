@@ -3,6 +3,7 @@
     <string name="facebook_app_id">246408085847654</string>
     <string name="fb_login_protocol_scheme">fb246408085847654</string>
     <string name="facebook_app_secret">cb6c03eb8ad19b719d18d1d3b713bd1a</string>
+    <string name="google_client_id">54667478729-irpchhvip2m8i3sbd5r856ck4ks83avr.apps.googleusercontent.com</string>
     <string name="binding_tag_spinner_items">binding_tag_spinner_items</string>
     <string name="binding_tag_spinner_default_item">binding_tag_spinner_default_item</string>
 </resources>

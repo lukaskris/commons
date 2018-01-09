@@ -2,7 +2,7 @@ package com.evodream.app.accountcommons.util;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.ProgressDialog;
+import android.app.AlertDialog;
 import android.content.ContentUris;
 import android.content.Context;
 import android.content.Intent;
@@ -32,6 +32,8 @@ import com.evodream.app.accountcommons.R;
 import com.google.common.base.Optional;
 
 import java.io.File;
+
+import dmax.dialog.SpotsDialog;
 
 /**
  * @author Erick Pranata
@@ -88,12 +90,12 @@ public class AndroidUtil {
 		return snackbar;
 	}
 
-	public static ProgressDialog showProgressDialog(Context context) {
+	public static SpotsDialog showProgressDialog(Context context) {
 		return showProgressDialog(context, context.getString(R.string.lit_processing_), context.getString(R.string.lit_please_wait));
 	}
 
-	public static ProgressDialog showProgressDialog(Context context, String title, String message) {
-		return ProgressDialog.show(context, title, message, true, false);
+	public static SpotsDialog showProgressDialog(Context context, String title, String message) {
+		return new SpotsDialog(context, message);
 	}
 
 	public static void switchToInanimate(int containerResId, Fragment fragment, FragmentManager fragmentManager) {

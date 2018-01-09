@@ -2,7 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
-
+        <variable
+            name="handler"
+            type="com.evodream.app.accountcommons.register.RegisterHandler"/>
+        <variable
+            name="viewModel"
+            type="com.evodream.app.accountcommons.register.RegisterViewModel"/>
     </data>
 
     <android.support.design.widget.CoordinatorLayout
@@ -17,112 +22,43 @@
             android:gravity="center"
             android:paddingLeft="20dp"
             android:paddingRight="20dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.48"
-                    android:background="@color/colorFacebook">
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/facebook"
-                        android:layout_marginStart="10dp"
-                        android:layout_gravity="start|center"
-                        android:contentDescription="@string/lit_login_with_facebook"/>
-                    <TextView
-                        style="@style/MyButton"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/lit_facebook"
-                        android:layout_gravity="center"
-                        android:background="?attr/selectableItemBackground"
-                        android:focusable="true"
-                        android:clickable="true"/>
-                </FrameLayout>
-                <Space
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.04"/>
-                <FrameLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.48"
-                    android:background="@drawable/google__button_gradient">
 
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/google"
-                        android:layout_marginStart="10dp"
-                        android:layout_gravity="start|center"
-                        android:contentDescription="@string/lit_login_with_google"/>
-                    <TextView
-                        style="@style/MyButton"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/lit_google"
-                        android:layout_gravity="center"
-                        android:background="?attr/selectableItemBackground"
-                        android:focusable="true"
-                        android:clickable="true"
-                        android:textColor="@color/colorPrimaryText"/>
-                </FrameLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="0.45"
-                    android:background="@color/colorDivider"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:text="@string/lit_or"/>
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="0.45"
-                    android:background="@color/colorDivider"/>
-            </LinearLayout>
             <android.support.design.widget.TextInputLayout
+                android:id="@+id/name_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/lit_full_name"
+                    android:text="@{viewModel.name}"
                     android:inputType="textPersonName" />
             </android.support.design.widget.TextInputLayout>
             <android.support.design.widget.TextInputLayout
+                android:id="@+id/email_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/lit_email"
+                    android:text="@{viewModel.email}"
                     android:inputType="textEmailAddress" />
             </android.support.design.widget.TextInputLayout>
             <android.support.design.widget.TextInputLayout
+                android:id="@+id/phone_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/lit_phone"
+                    android:text="@{viewModel.phone}"
                     android:inputType="phone" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
+                android:id="@+id/password_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:passwordToggleEnabled="true">
@@ -130,6 +66,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/lit_password"
+                    android:text="@{viewModel.password}"
                     android:inputType="textPassword"/>
             </android.support.design.widget.TextInputLayout>
             <FrameLayout
@@ -145,7 +82,8 @@
                     android:layout_gravity="center"
                     android:background="?attr/selectableItemBackground"
                     android:focusable="true"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:onClick="@{()->handler.handleRegisterClick()}"/>
             </FrameLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -157,6 +95,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/lit_title_have_account"/>
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -164,6 +105,7 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:background="?attr/selectableItemBackgroundBorderless"
+                    android:onClick="@{()->handler.handleLoginClick()}"
                     android:textColor="@color/colorPrimaryDark"/>
             </LinearLayout>
         </LinearLayout>

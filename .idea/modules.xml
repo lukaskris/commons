@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AccountCommons.iml" filepath="$PROJECT_DIR$/AccountCommons.iml" />
+      <module fileurl="file://E:\project\android\commons\AccountCommons.iml" filepath="E:\project\android\commons\AccountCommons.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/commons.iml" filepath="$PROJECT_DIR$/.idea/commons.iml" />
     </modules>
   </component>
 </project>

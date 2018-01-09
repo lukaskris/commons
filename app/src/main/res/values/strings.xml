@@ -26,4 +26,7 @@
     <string name="lit_error_email_empty">Email tidak boleh kosong</string>
     <string name="lit_error_password_empty">Password tidak boleh kosong</string>
     <string name="lit_error_email_does_not_match_format">Email tidak sesuai format</string>
+    <string name="lit_authentication_failed">Authentikasi gagal</string>
+    <string name="lit_error_name_empty">Nama tidak boleh kosong</string>
+    <string name="lit_error_phone_empty">Nomor telepon tidak boleh kosong</string>
 </resources>

@@ -21,7 +21,7 @@ class LoginViewModel(context:Context, navigator:LoginNavigator) : BaseViewModel<
 	}
 
 	@Bindable
-	fun getEmail() = email.get()
+	fun getEmail(): String = email.get()
 
 	@Bindable
 	fun setEmail(email:String){
@@ -29,7 +29,7 @@ class LoginViewModel(context:Context, navigator:LoginNavigator) : BaseViewModel<
 	}
 
 	@Bindable
-	fun getPassword() = password.get()
+	fun getPassword(): String = password.get()
 
 	@Bindable
 	fun setPassword(password:String){
@@ -53,12 +53,12 @@ class LoginViewModel(context:Context, navigator:LoginNavigator) : BaseViewModel<
 
 	fun onLogin(){
 		if(isSignInValid(getEmail(), getPassword())){
-
+			//Todo set login disini
 		}
 	}
 
-	fun isEmailValid(email: String): Boolean {
-		val expression = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$"
+	private fun isEmailValid(email: String): Boolean {
+		val expression = "^[\\w.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$"
 		val pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE)
 		val matcher = pattern.matcher(email)
 		return matcher.matches()
